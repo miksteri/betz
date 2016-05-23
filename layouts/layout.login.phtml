@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<?php if (isset($meta)) echo $meta; ?>
+<title><?php echo TOURNAMENT_NAME; ?> -hupilyönti</title>
+<link rel="shortcut icon" href="<?php echo url('~/favicon.ico', true); ?>">
+<link rel="stylesheet" href="<?php echo url('~/css/typography.css'); ?>">
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/themes/dark-hive/jquery-ui.css">
+<link rel="stylesheet" href="<?php echo url('~/css/login.css'); ?>">
+<?php if (isset($css)) echo $css; ?>
+</head>
+<body id="default">
+<?php if (defined('GOOGLE_ANALYTICS_ID')): ?>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '<?php echo GOOGLE_ANALYTICS_ID ?>', 'betz.io');
+    ga('send', 'pageview');
+</script>
+<?php endif; ?>
+<div id="wrapper">
+    <div id="content">
+        <div id="login">
+            <?php echo $view; ?>
+        </div>
+        <?php /*
+        <br />
+        <div style="background-color: #e5e5e5; padding: 6px;" class="ui-corner-top ui-corner-bottom">
+            <a href="/mobile">Vaihda kännykkäoptimoituun käyttöliittymään</a>
+        </div>
+        */ ?>
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
+<script src="<?php echo url('~/js/jquery.qtip.js'); ?>"></script>
+<script src="<?php echo url('~/js/main.js'); ?>"></script>
+<?php if (isset($scripts)) echo $scripts; ?>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/nbproject/private/
+/nbproject/
+/data/*.sq3
+/data/*.log
+config.php

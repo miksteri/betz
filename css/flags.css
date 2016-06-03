@@ -6,7 +6,7 @@
 .f16 ._CARICOM{background-position:0 -48px;}
 .f16 ._CIS{background-position:0 -64px;}
 .f16 ._Commonwealth{background-position:0 -80px;}
-.f16 ._England,.f16 .ENG{background-position:0 -96px;}
+.f16 ._England,.f16 .ENG, .f16 .GBR{background-position:0 -96px;}
 .f16 ._European_Union{background-position:0 -112px;}
 .f16 ._Islamic_Conference{background-position:0 -128px;}
 .f16 ._Kosovo{background-position:0 -144px;}
@@ -250,7 +250,7 @@
 .f32 ._CARICOM{background-position:0 -96px;}
 .f32 ._CIS{background-position:0 -128px;}
 .f32 ._Commonwealth{background-position:0 -160px;}
-.f32 ._England,.f32 .ENG{background-position:0 -192px;}
+.f32 ._England,.f32 .ENG,.f32 .GBR{background-position:0 -192px;}
 .f32 ._European_Union{background-position:0 -224px;}
 .f32 ._Islamic_Conference{background-position:0 -256px;}
 .f32 ._Kosovo{background-position:0 -288px;}

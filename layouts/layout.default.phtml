@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="<?php echo url('~/css/typography.css'); ?>">
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/themes/dark-hive/jquery-ui.css">
 <link rel="stylesheet" href="<?php echo url('~/css/jquery.pnotify.css'); ?>">
-<link rel="stylesheet" href="<?php echo url('~/css/flags.css'); ?>">
+<link rel="stylesheet" href="<?php echo url('~/css/flags.css?') . md5_file('css/flags.css'); ?>">
 <link rel="stylesheet" href="<?php echo url('~/css/960.css'); ?>">
 <link rel="stylesheet" href="<?php echo url('~/css/menu.css'); ?>">
 <link rel="stylesheet" href="<?php echo url('~/css/main.css?') . md5_file('css/main.css'); ?>">
@@ -28,7 +28,7 @@
 <div id="container" class="container_12">
 <div id="container-top">
     <div id="header">
-        <div id="user-buttons" style="float: right; text-align: center;">
+        <div id="user-buttons" class="ugly" style="float: right; text-align: center;">
             <button id="user-profile"><?php echo username; ?></button>
             <button id="user-logoff">Kirjaudu ulos</button>
             <br>
@@ -218,5 +218,8 @@ $.pnotify({
 <?php $i++; endforeach; endif; ?>
 </script>
 <?php if (isset($scripts)) echo $scripts; ?>
+<script>
+$(".ugly").show();
+</script>
 </body>
 </html>

@@ -7,7 +7,7 @@ html, body {
     padding: 0;
 }
 body {
-    background: url('../img/skates.jpg') no-repeat center center fixed;
+    background: url('../img/bg-login-euro2016.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -77,10 +77,14 @@ box-shadow: 0 0 5px #888;
     height: 23px;
     line-height: 23px;
     margin-top: 2px;
-    width: 223px;
+    width: 222px;
 }
 #login-form.registration input[type=password]{
     width: 270px;
+}
+.ui-button-text-only .ui-button-text {
+    margin-top: 2px;
+    line-height: 16px;
 }
 #login-form a {
     padding: 7px 30px;
